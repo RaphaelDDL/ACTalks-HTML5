@@ -1,0 +1,32 @@
+//* ========================
+//	File: _sprites.scss
+//	Author: Raphael Oliveira
+//	Date: 2013
+//	Purpose: Icon Sprites
+//======================== */
+@import "compass/utilities/sprites";
+
+//* ------------------------
+//	SPRITE GENERATOR TEMPLATE
+//		Class names:
+//		.{folderName}-{imgName}
+//------------------------ */
+/*
+${folderName}-spacing: 15px;
+@import "{folderName}/*.png";
+@include all-{folderName}-sprites;
+
+.{folderName}-sprite {
+	width:41px;
+	height:41px;
+	display:inline-block;
+	vertical-align:middle;
+	*display:inline;
+	zoom:1;
+}*/
+
+
+/* =============================================
+Section:
+================================================ */
+

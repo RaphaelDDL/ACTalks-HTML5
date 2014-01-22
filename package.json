@@ -1,0 +1,30 @@
+{
+	"name": "ACTalks-HTML5",
+	"version": "1.0.0",
+	"description": "description",
+	"main": "Gruntfile.js",
+	"author": "Raphael DDL Oliveira",
+	"url": "https://github.com/RaphaelDDL/ACTalks-HTML5",
+	"folderConfig": {
+		"user_http_path": "/",
+		"user_assets_folder": "assets",
+		"user_css_folder": "css",
+		"user_fonts_folder": "fonts",
+		"user_sass_folder": "sass",
+		"user_sasscache_folder": ".cache",
+		"user_image_folder": "img",
+		"user_javascript_folder": "js",
+		"user_sourcemaps":"true"
+	},
+	"devDependencies": {
+		"grunt": "~0.4.2",
+		"grunt-newer": "~0.6.1",
+		"grunt-contrib-uglify": "~0.2.7",
+		"grunt-contrib-compass": "~0.7.0",
+		"grunt-contrib-imagemin": "~0.5.0",
+		"grunt-contrib-watch": "~0.5.3"
+	},
+	"dependencies": {
+		"grunt-contrib-connect": "~0.6.0"
+	}
+}

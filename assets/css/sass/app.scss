@@ -1,0 +1,130 @@
+@charset "UTF-8";
+//* ========================
+//File: app.scss
+//Author: Raphael DDL Oliveira
+//======================== */
+
+/*! DDL */
+@import "compass";
+@import "variables";
+@import "mixins";
+@import "sprites";
+@import "font-awesome/font-awesome";
+@import "reveal";
+@import "reveal_default-theme";
+@import "prettify";
+@import "bootstrap-custom";
+
+//* =============================================
+//Section: Helpers
+//================================================ */
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.alignLeft {
+	text-align: left;
+}
+
+.alignCenter {
+	text-align: center;
+}
+
+.alignRight {
+	text-align: right;
+}
+
+.fontOrange {
+	color:rgb(241,101,41);
+}
+
+//* =============================================
+//Section:
+//================================================ */
+html,body {
+	min-height:100%;
+}
+
+.slides {
+
+	section {
+		min-height: 100%;
+	}
+}
+
+.reveal {
+	ul li {
+		margin-bottom: 0.6em;
+	}
+}
+
+div.acFooter {
+	position: absolute;
+	width: 800px;
+	z-index: 999;
+	left: 0;
+	bottom: 20px;
+	color: #ccc;
+	height: 46px;
+	text-align: left;
+
+	& * {
+		vertical-align: bottom;
+		font-size: 24px;
+		text-align: left;
+	}
+}
+
+img.noStyle {
+	background: transparent !important;
+	@include boxShadowNone();
+	border: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+img.picture {
+	@extend .noStyle;
+	margin:0 15px 15px 0 !important;
+	border: 1px solid white !important;
+}
+
+img.acFooter {
+	position: absolute;
+	max-height: none;
+	max-width: none;
+	width: 153px;
+	height: 109px;
+	z-index: 999;
+	right: 0;
+	bottom: 10px;
+	@extend img.noStyle;
+}
+
+h1, h2, h3, h4 {
+	.fa {
+		// color:rgb(228,77,38);
+		@extend .fontOrange;
+		text-shadow: none;
+	}
+}
+
+.small {
+	font-size: 75% !important;
+}
+
+.xsmall {
+	font-size: 50% !important;
+}
+
+
+.reveal .slide-background {
+	background: transparent url('../img/featured48@wdd2x.jpg') 0 0 no-repeat;
+	 background-size:100% auto;
+}

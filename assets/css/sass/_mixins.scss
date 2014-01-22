@@ -1,0 +1,133 @@
+//* ========================
+//File: _mixins.scss
+//Author: Raphael Oliveira
+//Purpose: default @mixins
+//======================== */
+
+//* ------------------------
+//	Section: Mixin Prefixer
+//  Adds:
+//	-webkit -khtml -moz -ms -o
+//	and standard properties
+//------------------------ */
+@mixin prefix($property, $value, $important:"", $special:"", $prefixes: -webkit -khtml -moz -ms -o) {
+
+	@if $important == "!" {
+		$important:" !important";
+	}
+
+	@if $special == true {
+		@each $prefix in $prefixes {
+			#{$prefix}-#{$property}:#{$prefix}-$value#{$important};
+		}
+		#{$property}:$value#{$important};
+	}@else {
+		@each $prefix in $prefixes {
+			#{$prefix}-#{$property}:$value#{$important};
+		}
+		#{$property}:$value#{$important};
+	}
+
+}
+
+//* ------------------------
+//	Section: Border Sizing
+//------------------------ */
+@mixin boxSizing() {
+	@include prefix(box-sizing,border-box,"!");
+}
+
+//* ------------------------
+//	Section: Border Radius
+//------------------------ */
+@mixin borderRadius($px,$important:"") {
+	@include prefix(border-radius,$px,#{$important});
+}
+
+@mixin borderRadiusTopLeft($px) {
+	-webkit-border-top-left-radius: $px;
+	-moz-border-radius-topleft: $px;
+	-ms-border-top-left-radius: $px;
+	border-top-left-radius: $px;
+}
+
+@mixin borderRadiusTopRight($px) {
+	-webkit-border-top-right-radius: $px;
+	-moz-border-radius-topright: $px;
+	-ms-border-top-right-radius: $px;
+	border-top-right-radius: $px;
+}
+
+@mixin borderRadiusBottomLeft($px) {
+	-webkit-border-bottom-left-radius: $px;
+	-moz-border-radius-bottomleft: $px;
+	-ms-border-bottom-left-radius: $px;
+	border-bottom-left-radius: $px;
+}
+
+@mixin borderRadiusBottomRight($px) {
+	-webkit-border-bottom-right-radius: $px;
+	-moz-border-radius-bottomright: $px;
+	-ms-border-bottom-right-radius: $px;
+	border-bottom-right-radius: $px;
+}
+
+@mixin borderRadiusBottom($px) {
+	@include borderRadiusBottomRight($px);
+	@include borderRadiusBottomLeft($px);
+}
+
+@mixin borderRadiusTop($px) {
+	@include borderRadiusTopRight($px);
+	@include borderRadiusTopLeft($px);
+}
+
+
+//* ------------------------
+//	Section: Shadows
+//------------------------ */
+//box-shadow: <offset-x> <offset-y> <blur-radius*> <spread-radius*> <color*> <inset*>;
+@mixin boxShadow($boxShadow...){
+	@include prefix(box-shadow,$boxShadow);
+}
+
+@mixin boxShadowNone(){
+	@include boxShadow(0 0 0 0 #fff !important);
+}
+
+@mixin textShadow($textShadow...) {
+	@include prefix(text-shadow,$textShadow);
+}
+
+@mixin textShadowNone(){
+	@include textShadow(0 0 0 #fff !important);
+}
+
+
+//* ------------------------
+//	Section: Opacity
+//------------------------ */
+@mixin opacity($value:0.5,$important:""){
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$value*100});
+	@include prefix(opacity,$value,#{$important});
+}
+
+
+//* ------------------------
+//	Section: Transition
+//------------------------ */
+@mixin transit($transition...) {
+	@include prefix(transition,$transition);
+}
+
+@mixin transitNone(){
+	@include prefix(transition,none,"!");
+}
+
+
+//* ------------------------
+//	Section: Transform
+//------------------------ */
+@mixin transformNone(){
+	@include prefix(transform,none,"!");
+}
