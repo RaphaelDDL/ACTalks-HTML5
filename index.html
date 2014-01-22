@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+	<title>AvenueCode Talks - HTML5 by Raphael DDL Oliveira</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<!-- =============================================
+	Section: MobileFriendly Metas
+	================================================== -->
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="MobileOptimized" content="320" />
+	<meta http-equiv="cleartype" content="on" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+
+	<!-- =============================================
+	Section: SEO Metas
+	================================================== -->
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+
+	<!-- =============================================
+	Section: Stylesheets
+	================================================== -->
+	<link rel="stylesheet" type="text/css" href="./assets/css/app.css" />
+</head>
+<body>
+	<!-- =============================================
+	Section: HTML
+	================================================== -->
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<img src="./assets/img/HTML5_Logo_512.png" class="noStyle" style="max-height: none; max-width: none; width: 373px; height: 373px;">
+
+				<p>by Raphael Oliveira @ Avenue Code</p>
+
+				<p>
+					<a href="mailto:roliveira@avenuecode.com">roliveira@avenuecode.com</a>
+				</p>
+
+				<p>Feb 6th, 2014</p>
+			</section>
+			<section>
+				<h2><i class="fa fa-book"></i> AGENDA</h2>
+				<ul class="small">
+					<li >Prerequisites</li>
+					<li >What HTML 5 aims</li>
+					<li >Notable differences</li>
+					<li >New on HTML 5: Element Semantic Changes</li>
+					<li >New on HTML 5: Structure</li>
+					<li >New on HTML 5: Forms</li>
+					<li >New on HTML 5: Status Indicator</li>
+					<li >New on HTML 5: Media</li>
+					<li >Conclusion: Browser vs Feature</li>
+				</ul>
+			</section>
+			<section>
+				<h2><i class="fa fa-exclamation"></i> Prerequisites</h2>
+				<br />
+				<br />
+				<br />
+				<br />
+				<p>
+					Intermediary HTML knowledge
+				</p>
+			</section>
+			<section>
+				<h2><i class="fa fa-html5"></i> What HTML5 aims</h2>
+
+				<ul>
+					<li class="fragment">Increased separation markup from styling;</li>
+					<li class="fragment">Documented error handling, by defining detailed parsing rules;</li>
+					<li class="fragment">Deepens into Web Application, by implementing new APIs, elements and other resources that were previously only available through Flash, Java Applets or JS Hacks; <strong class="fontOrange">&sup1;</strong></li>
+					<li class="fragment">More semantic!</li>
+				</ul>
+				<br />
+				<br />
+				<br />
+				<p class="xsmall alignLeft fragment"><strong class="fontOrange">&sup1;</strong>: App Cache/Manifest, contenteditable, data-*, role / aria-*, JS APIs such as Geolocation, Session and Local Storages, History/PushState, Audio/Video media, Canvas, Draggable/Droppable. Not covered in this presentation.</p>
+			</section>
+
+
+			<!-- =============================================
+			Section: Notable differences
+			================================================== -->
+			<section>
+				<section>
+					<h2><i class="fa fa-exclamation-circle"></i> Notable differences</h2>
+
+					<h4>DOCTYPE</h4>
+
+<pre class="prettyprint linenums lang-html noConvert"><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot; &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;
+
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+
+&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;</code></pre>
+					<p>All became</p>
+					<pre class="prettyprint linenums lang-html noConvert"><code>&lt;!DOCTYPE html&gt;</code></pre>
+					<p class="small alignLeft">Doctype was simplified and now it's only used to enable Standards Mode for HTML documents.</p>
+				</section>
+
+				<section>
+					<h2><i class="fa fa-exclamation-circle"></i> Notable differences</h2>
+
+					<h4>Easier Rules</h4>
+
+					<p class="small alignLeft">No enforced trailing slashes on the 'self-closing' elements</p>
+					<pre class="prettyprint linenums lang-html noConvert"><code>&lt;!-- xHTML --&gt;
+&lt;img src=&quot;path/to/img.ext&quot; alt=&quot;&quot; /&gt;
+&lt;br /&gt;
+
+&lt;!-- HTML5 --&gt;
+&lt;img src=&quot;path/to/img.ext&quot; alt=&quot;&quot;&gt;
+&lt;br&gt;</code></pre>
+				</section>
+
+				<section>
+					<h2><i class="fa fa-exclamation-circle"></i> Notable differences</h2>
+
+					<h4>Easier Rules</h4>
+
+					<p class="small alignLeft">Elements can have empty attributes without writing <strong>=""</strong></p>
+					<pre class="prettyprint linenums lang-html noConvert"><code>&lt;!-- xHTML --&gt;
+&lt;input type=&quot;text&quot; required=&quot;required&quot; autofocus=&quot;autofocus&quot; /&gt;
+
+&lt;!-- HTML5 --&gt;
+&lt;input type=&quot;text&quot; required autofocus&gt;</code></pre>
+				</section>
+
+				<section>
+					<h2><i class="fa fa-exclamation-circle"></i> Notable differences</h2>
+
+					<h4>Easier Rules</h4>
+
+					<p class="small alignLeft">Elements can have attributes without quotes (<strong>""</strong>)</p>
+					<pre class="prettyprint linenums lang-html noConvert"><code>&lt;!-- xHTML --&gt;
+&lt;input type=&quot;text&quot; placeholder=&quot;username&quot; /&gt;
+
+&lt;!-- HTML5 --&gt;
+&lt;input type=text placeholder=username &gt;</code></pre>
+					<div class="fragment">
+						<p class="small alignLeft">But quotes are still needed for values which have spaces (like multiple classes) or else the values after the spaces will become (invalid) attributes.</p>
+
+						<pre class="prettyprint linenums lang-html noConvert"><code>&lt;input type=text class=myForm formPretty coolForm&gt;
+&lt;!-- =/= --&gt;
+&lt;input type=text class="myForm formPretty coolForm"&gt;</code></pre>
+					</div>
+				</section>
+
+				<section>
+					<h2><i class="fa fa-exclamation-circle"></i> Notable differences</h2>
+
+					<h4>Strict Rules</h4>
+
+					<p class="small alignLeft">No parser normalization</p>
+					<pre class="prettyprint linenums lang-html noConvert"><code>&lt;input type=&quot;text&quot; id=&quot; someIdWithSpaces &quot; /&gt;</code></pre>
+					<p class="small alignLeft">This is no more trimmed/ignored and now count as an error, that is, invalid html.</p>
+				</section>
+			</section>
+
+
+			<!-- =============================================
+			Section: Element Semantic Changes
+			================================================== -->
+			<section>
+				<section>
+					<h2><i class="fa fa-exchange"></i> Element Semantic Changes</h2>
+
+					<h4>The &lt;i&gt; element</h4>
+
+					<p class="small alignLeft">Used for <i>italic</i> presentation, now represents a span of text in an alternate voice/mood, technical term, phrase in another language or thoughts..</p>
+					<p class="small alignLeft">For terms in different languages, it should be used with lang attribute.</p>
+					<p class="small alignLeft">Examples:</p>
+					<pre class="prettyprint linenums lang-html noConvert"><code>&lt;p&gt;The &lt;i class=&quot;taxonomy&quot;&gt;Felis silvestris catus&lt;/i&gt; is cute.&lt;/p&gt;
+
+&lt;p&gt;The term &lt;i&gt;prose content&lt;/i&gt; is defined above.&lt;/p&gt;
+
+&lt;p&gt;There is a certain &lt;i lang=&quot;fr&quot;&gt;je ne sais quoi&lt;/i&gt; in the air.&lt;/p&gt;</code></pre>
+				</section>
+
+				<section>
+					<h2><i class="fa fa-exchange"></i> Element Semantic Changes</h2>
+
+					<h4>The &lt;em&gt; element</h4>
+
+					<p class="small alignLeft">Used for <em>emphasis</em> presentation, now represents a stress emphasis, i.e., something you'd pronounce differently. A statement of fact, with no stress:</p>
+					<pre class="prettyprint linenums lang-html noConvert"><code>&lt;p&gt;Cats are cute animals.&lt;/p&gt;</code></pre>
+
+					<div class="fragment">
+						<p class="small alignLeft">By emphasizing the first word, the statement implies that the kind of animal under discussion is in question (maybe someone is asserting that dogs are cute):</p>
+						<pre class="prettyprint linenums lang-html noConvert"><code>&lt;p&gt;&lt;em&gt;Cats&lt;/em&gt; are cute animals.&lt;/p&gt;</code></pre>
+					</div>
+					<div class="fragment">
+						<p class="small alignLeft">Moving the stress to the verb, one highlights that the truth of the entire sentence is in question (maybe someone is saying cats are not cute):</p>
+						<pre class="prettyprint linenums lang-html noConvert"><code>&lt;p&gt;Cats &lt;em&gt;are&lt;/em&gt; cute animals.&lt;/p&gt;</code></pre>
+					</div>
+				</section>
+
+				<section>
+					<h2><i class="fa fa-exchange"></i> Element Semantic Changes</h2>
+
+					<h4>The &lt;b&gt; element</h4>
+
+					<p class="small alignLeft">Used for <b>bold</b> presentation, now represents a "stylistically offset", that is, something that is only to drawn attention without any other importance, such as keywords, product words in a review, etc.</p>
+
+					<div class="fragment">
+						<p class="small alignLeft">Use of the b element to highlight key words without marking them up as important:</p>
+						<pre class="prettyprint linenums lang-html noConvert"><code>&lt;p&gt;The &lt;b&gt;Handlebars&lt;/b&gt; and &lt;b&gt;requireJS&lt;/b&gt; presentations were awesome!&lt;/p&gt;</code></pre>
+					</div>
+					<div class="fragment">
+						<p class="small alignLeft">In the following example, objects in a text adventure are highlighted as being special by use of the b element:</p>
+						<pre class="prettyprint linenums lang-html noConvert"><code>&lt;p&gt;You enter a small room. Your &lt;b&gt;sword&lt;/b&gt; glows brighter. You feel a chill down your spine, as you sense &lt;b&gt;orcs&lt;/b&gt; sleep in the corner wall.&lt;/p&gt;</code></pre>
+					</div>
+				</section>
+
+				<section>
+					<h2><i class="fa fa-exchange"></i> Element Semantic Changes</h2>
+
+					<h4>The &lt;strong&gt; element</h4>
+
+					<p class="small alignLeft">Used for strong emphasis, now represents <strong>importance, seriouness and urgent</strong>. It does not change the meaning of the phrase like em but highlights the most important part.</p>
+
+					<pre class="prettyprint linenums lang-html noConvert"><code>&lt;p&gt;&lt;strong&gt;Warning.&lt;/strong&gt; This dungeon is dangerous. &lt;strong&gt;Avoid the ducks.&lt;/strong&gt; Take any gold you find. &lt;strong&gt;Do not take any of the diamonds&lt;/strong&gt;, they are explosive and &lt;strong&gt;will destroy anything within ten meters.&lt;/strong&gt; You have been warned.&lt;/p&gt;</code></pre>
+
+					<div class="fragment">
+						<p class="small alignLeft">A more daily use, the word "chapter" and the actual chapter number are mere boilerplate, and the actual name of the chapter is marked up with strong:</p>
+						<pre class="prettyprint linenums lang-html noConvert"><code>&lt;h1&gt;Chapter 1: &lt;strong&gt;What HTML 5 aims&lt;/strong&gt;&lt;/h1&gt;</code></pre>
+					</div>
+				</section>
+			</section>
+
+
+			<!-- =============================================
+			Section: Structure
+			================================================== -->
+			<section>
+				<section>
+					<h2><i class="fa fa-table"></i> Structure</h2>
+
+					<h4>The new elements</h4>
+
+					<img src="./assets/img/HTML5_website_structure.jpg" alt="" width="580" height="400" />
+					<p class="xsmall alignCenter">Image from m5designstudio.com</p>
+				</section>
+				<section>
+					<h2><i class="fa fa-table"></i> Structure</h2>
+
+					<h4>The &lt;header&gt; element</h4>
+
+					<p class="small alignLeft clearfix">The header element contains introductory information to a section or page. This can involve anything from our normal documents headers (branding information) to an entire table of contents.</p>
+
+					<pre class="prettyprint linenums lang-html noConvert"><code>&lt;header&gt;
+	&lt;h1 class=&quot;logo&quot;&gt;
+		&lt;a href=&quot;#&quot;&gt;My Brand&lt;/a&gt;
+	&lt;/h1&gt;
+	&lt;nav&gt;
+		&lt;!-- navigation contents --&gt;
+	&lt;/nav&gt;
+&lt;/header&gt;</code></pre>
+				</section>
+				<section>
+					<h2><i class="fa fa-table"></i> Structure</h2>
+
+					<h4>The &lt;nav&gt; element</h4>
+
+					<p class="small alignLeft">The nav element is reserved for a section of a document that contains links to other pages or links to sections of the same page. Not all link groups need to be contained within the &lt;nav&gt; element, just primary navigation.
+</p>
+
+					<pre class="prettyprint linenums lang-html noConvert"><code>&lt;nav&gt;
+	&lt;ul&gt;
+		&lt;li&gt;
+			&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;a href=&quot;#&quot;&gt;Products&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;a href=&quot;#&quot;&gt;Another navigation link&lt;/a&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+				</section>
+				<section>
+					<h2><i class="fa fa-table"></i> Structure</h2>
+
+					<h4>The &lt;aside&gt; element</h4>
+
+					<p class="small alignLeft">Aside, represents content related to the main area of the document. This is usually expressed in sidebars that contain elements like related posts, tag clouds, etc - that is, slightly related to the rest of the page. They can also be used for pull quotes.</p>
+
+					<pre class="prettyprint linenums lang-html noConvert"><code>&lt;section&gt;
+	&lt;article&gt;
+		&lt;!-- blog post here --&gt;
+	&lt;/article&gt;
+&lt;/section&gt;
+&lt;aside&gt;
+	&lt;h4&gt;See also&lt;/h4&gt;
+	&lt;ul&gt;
+		&lt;li&gt;
+			&lt;a href=&quot;#&quot;&gt;Some other post&lt;/a&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/aside&gt;</code></pre>
+				</section>
+				<section>
+					<h2><i class="fa fa-table"></i> Structure</h2>
+
+					<h4>The &lt;main&gt; element</h4>
+
+					<p class="small alignLeft">The main content of the body of a document or application. The main content area consists of content that is directly related to or expands upon the central topic of a document or central functionality of an application <em>(just one per page)</em>.</p>
+
+					<pre class="prettyprint linenums lang-html noConvert"><code>&lt;body&gt;
+	&lt;header&gt;&lt;/header&gt;
+	&lt;main&gt;
+		&lt;section&gt;
+		&lt;/section&gt;
+		&lt;!-- other sections --&gt;
+		&lt;aside&gt;
+		&lt;/aside&gt;
+	&lt;/main&gt;
+	&lt;footer&gt;&lt;/footer&gt;
+&lt;/body&gt;</code></pre>
+				</section>
+				<section>
+					<h2><i class="fa fa-table"></i> Structure</h2>
+
+					<h4>The &lt;section&gt; element</h4>
+
+					<p class="small alignLeft">The section element represents a generic document or application section. It acts much the same way a &lt;div&gt; does by separating off a portion of the document.</p>
+
+					<pre class="prettyprint linenums lang-html noConvert"><code>&lt;main&gt;
+	&lt;section&gt;
+		&lt;h2&gt;My website section - about&lt;/h2&gt;
+		&lt;p&gt;content&lt;/p&gt;
+	&lt;/section&gt;
+	&lt;section&gt;
+		&lt;h2&gt;My website section - contact&lt;/h2&gt;
+		&lt;p&gt;content&lt;/p&gt;
+	&lt;/section&gt;
+&lt;/main&gt;</code></pre>
+				</section>
+				<section>
+					<h2><i class="fa fa-table"></i> Structure</h2>
+
+					<h4>The &lt;article&gt; element</h4>
+
+					<p class="small alignLeft">The article element represents a portion of a page which can stand alone such as: a blog post, a forum entry, user submitted comments or any independent item of content.</p>
+
+					<pre class="prettyprint linenums lang-html noConvert"><code>&lt;main&gt;
+	&lt;section&gt;
+		&lt;article&gt;
+			&lt;h1&gt;My blog post&lt;/h1&gt;
+			&lt;p&gt;blog content&lt;/p&gt;
+		&lt;/article&gt;
+		&lt;article&gt;
+			&lt;h1&gt;another blog post&lt;/h1&gt;
+			&lt;p&gt;another blog content&lt;/p&gt;
+		&lt;/article&gt;
+	&lt;/section&gt;
+&lt;/main&gt;</code></pre>
+				</section>
+				<section>
+					<h2><i class="fa fa-table"></i> Structure</h2>
+
+					<h4>The &lt;footer&gt; element</h4>
+
+					<p class="small alignLeft">The footer element is for marking up the footer of, not only the current page, but each section contained in the page. So, it’s very likely that you’ll be using the &lt;footer&gt; element multiple times within one page.</p>
+
+					<pre class="prettyprint linenums lang-html noConvert"><code>&lt;body&gt;
+	&lt;header&gt;&lt;/header&gt;
+	&lt;main&gt;
+		&lt;section&gt;&lt;/section&gt;
+		&lt;aside&gt;&lt;/aside&gt;
+	&lt;/main&gt;
+	&lt;footer&gt;
+		&reg; Copyright 20XX - All rights reserved.
+	&lt;/footer&gt;
+&lt;/body&gt;</code></pre>
+				</section>
+				<section>
+					<h2><i class="fa fa-table"></i> Structure</h2>
+
+					<h4>Example Page</h4>
+
+					<img src="./assets/img/liveplayer.png" alt="" width="550" height="311" />
+
+					<p class="small">
+						<a href="http://www.liveplayer.com.br" target="_blank">LivePlayer</a>
+					</p>
+				</section>
+			</section>
+
+			<!-- =============================================
+			Section: FORMS
+			================================================== -->
+			<section>
+				<section>
+					<h2><i class="fa fa-edit"></i> Forms</h2>
+
+					<p class="small alignLeft">The form has received a significant amount of updates and new items, enabling better control and validation that were previously made using JavaScript as well as better usability.</p>
+					<p class="small alignLeft">JS is still needed while the support isn't wide but the good point is that most of those are already implemented in the mobile browsers as they highly increase the usability while filling a form.</p>
+					<br />
+					<br />
+					<br />
+					<br />
+					<p class="small alignLeft alert alert-info"><strong>Notice:</strong> Browsers that do not support the new types/attributes will fallback to the standard type="text".</p>
+				</section>
+
+				<section>
+					<h2><i class="fa fa-edit"></i> Forms</h2>
+
+					<h4>The "tel" type</h4>
+
+					<p class="small alignLeft clearfix">Used for telephone input.</p>
+
+					<pre class="prettyprint linenums lang-html noConvert"><code>&lt;input type=&quot;tel&quot; placeholder=&quot;9999-9999&quot; /&gt;</code></pre>
+
+					<form action="#" class="form">
+						<div class="form-group col-sm-5">
+							<p class="alignLeft xsmall">Desktop</p>
+							<input type="tel" class="form-control" placeholder="9999-9999" pattern="\d" />
+						</div>
+						<div class="col-sm-5 col-sm-offset-1">
+							<p class="alignLeft xsmall">Mobile</p>
+							<img src="./assets/img/iphone-form-tel.png" alt="" class="picture" style="width: 50%;" />
+						</div>
+					</form>
+				</section>
+				<section>
+					<h2><i class="fa fa-edit"></i> Forms</h2>
+
+					<h4>The "email" type</h4>
+
+					<p class="small alignLeft clearfix">Used for e-mail input.</p>
+
+					<pre class="prettyprint linenums lang-html noConvert"><code>&lt;input type=&quot;email&quot; placeholder=&quot;your@email.com&quot; /&gt;</code></pre>
+
+					<form action="#" class="form">
+						<div class="form-group col-sm-5">
+							<p class="alignLeft xsmall">Desktop</p>
+							<input type="email" class="form-control" placeholder="your@email.com" required />
+						</div>
+						<div class="col-sm-5 col-sm-offset-1">
+							<p class="alignLeft xsmall">Mobile</p>
+							<img src="./assets/img/iphone-form-email.png" alt="" class="picture" style="width: 50%;" />
+						</div>
+					</form>
+				</section>
+				<section>
+					<h2><i class="fa fa-edit"></i> Forms</h2>
+
+					<h4>The "search" type</h4>
+
+					<p class="small alignLeft clearfix">Used for search input.</p>
+
+					<pre class="prettyprint linenums lang-html noConvert"><code>&lt;input type=&quot;search&quot; placeholder=&quot;Search..&quot; /&gt;</code></pre>
+
+					<form action="#" class="form">
+						<div class="form-group col-sm-5">
+							<p class="alignLeft xsmall">Desktop</p>
+							<input type="search" class="form-control" placeholder="Search.." results="10" />
+						</div>
+						<div class="col-sm-5 col-sm-offset-1">
+							<p class="alignLeft xsmall">Mobile</p>
+							<img src="./assets/img/search.png" alt="" class="picture" style="width: 50%;" />
+						</div>
+					</form>
+				</section>
+
+				<section>
+					<h2><i class="fa fa-edit"></i> Forms</h2>
+
+					<h4>The "url" type</h4>
+
+					<p class="small alignLeft clearfix">Used for url input.</p>
+
+					<pre class="prettyprint linenums lang-html noConvert"><code>&lt;input type=&quot;url&quot; placeholder=&quot;http://yourwebsite.com&quot; /&gt;</code></pre>
+
+					<form action="#" class="form">
+						<div class="form-group col-sm-5">
+							<p class="alignLeft xsmall">Desktop</p>
+							<input type="url" class="form-control" placeholder="http://yourwebsite.com" required />
+						</div>
+						<div class="col-sm-5 col-sm-offset-1">
+							<p class="alignLeft xsmall">Mobile</p>
+							<img src="./assets/img/iphone_keyboard_type_url.jpg" alt="" class="picture" style="width: 50%;" />
+						</div>
+					</form>
+				</section>
+				<section>
+					<h2><i class="fa fa-edit"></i> Forms</h2>
+
+					<h4>The "date" type</h4>
+
+					<p class="small alignLeft clearfix">Used for date input.</p>
+
+					<pre class="prettyprint linenums lang-html noConvert"><code>&lt;input type=&quot;date&quot; /&gt;</code></pre>
+
+					<form action="#" class="form">
+						<div class="form-group col-sm-5">
+							<p class="alignLeft xsmall">Desktop</p>
+							<input type="date" class="form-control" required />
+						</div>
+						<div class="col-sm-5 col-sm-offset-1">
+							<p class="alignLeft xsmall">Mobile</p>
+							<img src="./assets/img/date.png" alt="" class="picture" style="width: 90%;" />
+						</div>
+					</form>
+				</section>
+				<section>
+					<h2><i class="fa fa-edit"></i> Forms</h2>
+
+					<h4>The "month" type</h4>
+
+					<p class="small alignLeft clearfix">Used for month input.</p>
+
+					<pre class="prettyprint linenums lang-html noConvert"><code>&lt;input type=&quot;month&quot; /&gt;</code></pre>
+
+					<form action="#" class="form">
+						<div class="form-group col-sm-5">
+							<p class="alignLeft xsmall">Desktop</p>
+							<input type="month" class="form-control" required />
+						</div>
+						<div class="col-sm-5 col-sm-offset-1">
+							<p class="alignLeft xsmall">Mobile</p>
+							<img src="./assets/img/month.jpg" alt="" class="picture" style="width: 50%;" />
+						</div>
+					</form>
+				</section>
+				<section>
+					<h2><i class="fa fa-edit"></i> Forms</h2>
+
+					<h4>The "week" type</h4>
+
+					<p class="small alignLeft clearfix">Used for week input.</p>
+
+					<pre class="prettyprint linenums lang-html noConvert"><code>&lt;input type=&quot;week&quot; /&gt;</code></pre>
+
+					<form action="#" class="form">
+						<div class="form-group col-sm-5">
+							<p class="alignLeft xsmall">Desktop</p>
+							<input type="week" class="form-control" required />
+						</div>
+					</form>
+				</section>
+				<section>
+					<h2><i class="fa fa-edit"></i> Forms</h2>
+
+					<h4>The "time" type</h4>
+
+					<p class="small alignLeft clearfix">Used for time input.</p>
+
+					<pre class="prettyprint linenums lang-html noConvert"><code>&lt;input type=&quot;time&quot; /&gt;</code></pre>
+
+					<form action="#" class="form">
+						<div class="form-group col-sm-5">
+							<p class="alignLeft xsmall">Desktop</p>
+							<input type="time" class="form-control" required />
+						</div>
+						<div class="col-sm-5 col-sm-offset-1">
+							<p class="alignLeft xsmall">Mobile</p>
+							<img src="./assets/img/iphone-time-picker.jpg" alt="" class="picture" style="width: 50%;" />
+						</div>
+					</form>
+				</section>
+
+				<section>
+					<h2><i class="fa fa-edit"></i> Forms</h2>
+
+					<h4>The "datetime-local" type</h4>
+
+					<p class="small alignLeft clearfix">Used for datetime-local input. It's a mix of 'date' and 'time' types.</p>
+
+					<pre class="prettyprint linenums lang-html noConvert"><code>&lt;input type=&quot;datetime-local&quot; /&gt;</code></pre>
+
+					<form action="#" class="form">
+						<div class="form-group col-sm-5">
+							<p class="alignLeft xsmall">Desktop</p>
+							<input type="datetime-local" class="form-control" required />
+						</div>
+						<div class="col-sm-5 col-sm-offset-1">
+							<p class="alignLeft xsmall">Mobile</p>
+							<img src="./assets/img/datetime-local.png" alt="" class="picture" style="width: 50%;" />
+						</div>
+					</form>
+				</section>
+
+				<section>
+					<h2><i class="fa fa-edit"></i> Forms</h2>
+
+					<h4>The "number" type</h4>
+
+					<p class="small alignLeft clearfix">Used for number input.</p>
+
+					<pre class="prettyprint linenums lang-html noConvert"><code>&lt;input type=&quot;number&quot; step=&quot;0.5&quot; /&gt;</code></pre>
+
+					<form action="#" class="form">
+						<div class="form-group col-sm-5">
+							<p class="alignLeft xsmall">Desktop</p>
+							<input type="number" class="form-control" step="0.5" required />
+						</div>
+						<div class="col-sm-5 col-sm-offset-1">
+							<p class="alignLeft xsmall">Mobile</p>
+							<img src="./assets/img/number.png" alt="" class="picture" style="width: 50%;" />
+						</div>
+					</form>
+				</section>
+
+				<section>
+					<h2><i class="fa fa-edit"></i> Forms</h2>
+
+					<h4>The "range" type</h4>
+
+					<p class="small alignLeft clearfix">Used for range input.</p>
+
+					<pre class="prettyprint linenums lang-html noConvert"><code>&lt;input type=&quot;range&quot; min=&quot;0&quot; max=&quot;100&quot; step=&quot;0.5&quot; /&gt;</code></pre>
+
+					<form action="#" class="form">
+						<div class="form-group col-sm-5">
+							<p class="alignLeft xsmall">Desktop</p>
+							<input type="range" class="form-control" min="0" max="100" step="0.5" required />
+						</div>
+					</form>
+				</section>
+
+				<section>
+					<h2><i class="fa fa-edit"></i> Forms</h2>
+
+					<h4>The "color" type</h4>
+
+					<p class="small alignLeft clearfix">Used for color input.</p>
+
+					<pre class="prettyprint linenums lang-html noConvert"><code>&lt;input type=&quot;color&quot; /&gt;</code></pre>
+
+					<form action="#" class="form">
+						<div class="form-group col-sm-5">
+							<p class="alignLeft xsmall">Desktop</p>
+							<input type="color" class="form-control" required />
+						</div>
+					</form>
+				</section>
+
+				<section>
+					<h2><i class="fa fa-edit"></i> Forms</h2>
+
+					<h4>New attributes</h4>
+
+					<p class="small alignLeft clearfix">There are some attributes that can be used on the inputs.</p>
+
+					<ul class="xsmall alignLeft">
+						<li><span class="fontOrange">placeholder</span> - text to be inserted as a helper;</li>
+						<li><span class="fontOrange">autofocus</span> - the focus will be on the input as soon the page loads;</li>
+						<li><span class="fontOrange">required</span> - it's required to be filled before form submission;</li>
+						<li><span class="fontOrange">pattern</span> - regexp for what is accepted on the input;</li>
+					</ul>
+
+					<p class="small alignLeft">Also there are some new pseudo-classes available through CSS for styling those new attributes and input states (not covered on this presentation):</p>
+
+					<ul class="xsmall alignLeft">
+						<li><span class="fontOrange">[required]</span> - attribute selector works for styling the required ones;</li>
+						<li><span class="fontOrange">:invalid</span> - pseudo-class for styling inputs with invalid data;</li>
+						<li><span class="fontOrange">:valid</span> - pseudo-class for styling inputs with valid data;</li>
+					</ul>
+
+				</section>
+				<section>
+					<h2><i class="fa fa-edit"></i> Forms</h2>
+
+					<h4>New attributes - Example</h4>
+
+					<pre class="prettyprint linenums lang-html noConvert"><code>&lt;input type=&quot;text&quot; id=&quot;inputTest&quot; placeholder=&quot;a text here&quot; autofocus required pattern=&quot;[a-zA-Z]{1,10}&quot; /&gt;</code></pre>
+
+					<pre class="prettyprint linenums lang-css noConvert"><code>
+#inputTest:invalid {
+	border:3px solid red;
+}
+#inputTest:valid {
+	border:3px solid green;
+}</code></pre>
+
+					<div class="clearfix">
+						<div class="col-sm-6">
+							<p class="small alignLeft">Input type text that is <b>required</b> and has the pattern <em>[a-zA-Z]{1,10}</em> (any character from a-z and A-Z, nothing else) and needs to be between one and 10 characters:</p>
+						</div>
+						<div class="col-sm-6">
+							<form action="#" class="form" onsubmit="$(this).submit(function(event){event.preventDefault();});">
+								<div class="form-group">
+									<style>
+										#inputTest {
+											border:3px solid white;
+										}
+										#inputTest:invalid {
+											border:3px solid red;
+										}
+										#inputTest:valid {
+											border:3px solid green;
+										}
+									</style>
+									<input type="text" placeholder="a text here" class="form-control" required pattern="[a-zA-Z]{1,10}" id="inputTest" />
+								</div>
+							</form>
+						</div>
+					</div>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2><i class="fa fa-tasks"></i>  Status Indicator</h2>
+
+					<h4>The &lt;meter&gt; element</h4>
+
+					<p class="small alignLeft">The meter element represents a scalar measurement within a known range, or a fractional value; for example disk usage, the relevance of a query result, or the fraction of a voting population to have selected a particular candidate.</p>
+
+					<pre class="prettyprint linenums lang-html noConvert"><code>&lt;meter value=&quot;50&quot; min=&quot;0&quot; max=&quot;100&quot; low=&quot;40&quot; high=&quot;90&quot; optimum=&quot;100&quot;&gt;50&lt;/meter&gt;</code></pre>
+
+					<div class="clearfix">
+						<div class="form-group col-sm-4">
+							<p class="xsmall">val 30</p>
+							<meter value="30" min="0" max="100" low="40" high="90" optimum="100">30</meter>
+						</div>
+						<div class="form-group col-sm-4">
+							<p class="xsmall">val 60</p>
+							<meter value="50" min="0" max="100" low="40" high="90" optimum="100">50</meter>
+						</div>
+						<div class="form-group col-sm-4">
+							<p class="xsmall">val 90</p>
+							<meter value="90" min="0" max="100" low="40" high="90" optimum="100">90</meter>
+						</div>
+					</div>
+
+				</section>
+				<section>
+					<h2><i class="fa fa-tasks"></i> Status Indicator</h2>
+
+					<h4>The &lt;progress&gt; element</h4>
+
+					<p class="small alignLeft">The progress element represents the completion progress of a task.</p>
+
+					<pre class="prettyprint linenums lang-html noConvert"><code>&lt;progress max='100' value='60'&gt;&lt;span&gt;60&lt;/span&gt;% played&lt;/progress&gt;</code></pre>
+
+					<div class="clearfix">
+						<div class="">
+							<p class="xsmall">val 30</p>
+							<progress max='100' value='30'><span>0</span>% played</progress>
+						</div>
+						<div class="">
+							<p class="xsmall">val 60</p>
+							<progress max='100' value='60'><span>60</span>% played</progress>
+						</div>
+						<div class="">
+							<p class="xsmall">val 90</p>
+							<progress max='100' value='90'><span>90</span>% played</progress>
+						</div>
+					</div>
+
+				</section>
+
+				<section>
+					<h2><i class="fa fa-tasks"></i> Status Indicator</h2>
+
+					<h4>The &lt;summary&gt; and &lt;details&gt; elements</h4>
+
+					<p class="small alignLeft">The progress element represents the completion progress of a task.</p>
+
+					<pre class="prettyprint linenums lang-html noConvert"><code>&lt;details open&gt;
+	&lt;summary&gt;Show/Hide me&lt;/summary&gt;
+	&lt;p class=&quot;xsmall&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, mollitia.&lt;/p&gt;
+&lt;/details&gt;</code></pre>
+
+					<div class="clearfix">
+						<div class="col-sm-6">
+							<details open>
+								<summary class="xsmall">Show/Hide me</summary>
+								<p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, mollitia.</p>
+							</details>
+						</div>
+						<div class="col-sm-6">
+							<details>
+								<summary class="xsmall">Show/Hide me</summary>
+								<p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, mollitia.</p>
+							</details>
+						</div>
+					</div>
+
+				</section>
+			</section>
+
+
+			<!-- =============================================
+			Section: media
+			================================================== -->
+			<section>
+				<section>
+					<h2><i class="fa fa-play-circle-o"></i> Media</h2>
+
+					<h4>The &lt;audio&gt; element</h4>
+
+					<p class="small alignLeft">This is the element which enables audio in a webpage without the need of any plugins.</p>
+
+					<pre class="prettyprint linenums lang-html noConvert xsmall"><code>&lt;audio src=&quot;path/to/music.ext&quot; loop controls autoplay preload=&quot;metadata&quot;&gt;
+	&lt;!-- fallback here, such as Flash or some error message --&gt;
+&lt;/audio&gt;</code></pre>
+					<p class="fragment small alignLeft">Browser vendors couldn't agree with what codec to support because of patents and such, therefore each one support a different set of codecs. So you set various sources:</p>
+
+					<pre class="fragment prettyprint linenums lang-html noConvert xsmall"><code>&lt;audio loop controls autoplay preload=&quot;auto&quot;&gt;
+	&lt;source src=&quot;path/to/music.mp3&quot; /&gt;
+	&lt;source src=&quot;path/to/music.ogg&quot; /&gt;
+	&lt;source src=&quot;path/to/music.wav&quot; /&gt;
+	&lt;!-- fallback here, such as Flash or some error message --&gt;
+&lt;/audio&gt;</code></pre>
+
+					<div class="fragment clearfix">
+						<div class="col-sm-6 alignCenter">
+							<audio loop preload="auto" controls>
+							<source src="./assets/media/SNES_ISSSD_Menu.mp3" />
+							<!-- fallback here, such as Flash or some error message -->
+						</audio>
+						</div>
+						<div class="col-sm-6 alignCenter">
+							<audio loop preload="auto" controls>
+								<source src="./assets/media/SNES_MMX_OpeningStage.mp3" />
+								<!-- fallback here, such as Flash or some error message -->
+							</audio>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h2><i class="fa fa-play-circle-o"></i> Media</h2>
+
+					<h4>The &lt;audio&gt; element - Codec support:</h4>
+
+					<p class="small alignLeft">This is the table of codecs currently supported by each browser:</p>
+
+					<ul class="small alignLeft">
+						<li><span class="fontOrange">MP3</span> - Chrome, Safari, IE9;</li>
+						<li><span class="fontOrange">WAV</span> - Chrome, Firefox, Safari, Opera;</li>
+						<li><span class="fontOrange">OGG</span> - Chrome, Firefox, Opera;</li>
+					</ul>
+				</section>
+
+				<!-- video -->
+				<section>
+					<h2><i class="fa fa-play-circle-o"></i> Media</h2>
+
+					<h4>The &lt;video&gt; element</h4>
+
+					<p class="small alignLeft">This is the element which enables video in a webpage without the need of any plugins.</p>
+
+					<pre class="prettyprint linenums lang-html noConvert xsmall"><code>&lt;video src=&quot;path/to/video.ext&quot; loop controls autoplay preload=&quot;metadata&quot; style=&quot;width:100px;height:100px;&quot; poster=&quot;path/to/imageposter.ext&quot; &gt;
+	&lt;!-- fallback here, such as Flash or some error message --&gt;
+&lt;/video&gt;</code></pre>
+					<p class="fragment small alignLeft">The same browser agreement shows up on video, the same way as audio, each one support a different set of codecs. So you set various sources:</p>
+
+					<pre class="fragment prettyprint linenums lang-html noConvert xsmall"><code>&lt;video loop controls autoplay preload=&quot;metadata&quot; style=&quot;width:100px;height:100px;&quot; poster=&quot;path/to/imageposter.ext&quot; &gt;
+	&lt;source src=&quot;path/to/video.mp4&quot; /&gt;
+	&lt;source src=&quot;path/to/video.webm&quot; /&gt;
+	&lt;source src=&quot;path/to/video.ogv&quot; /&gt;
+	&lt;!-- fallback here, such as Flash or some error message --&gt;
+&lt;/video&gt;</code></pre>
+				</section>
+				<section>
+					<h2><i class="fa fa-play-circle-o"></i> Media</h2>
+
+					<h4>The &lt;video&gt; element - cont.</h4>
+
+					<div class="clearfix">
+						<div class=" alignCenter">
+							<video loop preload="none" controls loop style="width: 540px;height: 408px;">
+								<source src="./assets/media/001_SaintSeiya.mp4" />
+								<!-- fallback here, such as Flash or some error message -->
+							</video>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<h2><i class="fa fa-play-circle-o"></i> Media</h2>
+
+					<h4>The &lt;audio&gt; element - Codec support:</h4>
+
+					<p class="small alignLeft">This is the table of codecs currently supported by each browser:</p>
+
+					<ul class="small alignLeft">
+						<li><span class="fontOrange">MP4</span> - Chrome, Safari, IE9;</li>
+						<li><span class="fontOrange">WebM</span> - Chrome, Firefox, Opera;</li>
+						<li><span class="fontOrange">OGG</span> - Chrome, Firefox, Opera;</li>
+					</ul>
+				</section>
+			</section>
+
+
+
+			<!-- =============================================
+			Section: features usage
+			================================================== -->
+			<section>
+				<h2><i class="fa fa-check-square"></i> Conclusion</h2>
+
+				<h4>Browser vs Feature</h4>
+
+				<p class="small alignLeft"></p>
+
+				<ul class="small alignLeft">
+					<li><span class="">HTML5 Please</span></li>
+					<li><span class="">Can I Use</span></li>
+					<li><span class="">HTML5Shiv/shim</span></li>
+					<li><span class="">Modernizr/Yepnope</span></li>
+				</ul>
+
+			</section>
+			<section>
+				<h2><i class="fa fa-pencil"></i> Learn more</h2>
+				<br />
+				<ul class="small alignLeft">
+					<li class="visible" >
+						<a href="http://www.w3.org/TR/html5-diff/">W3C Differences from HTML4</a>
+					</li>
+					<li class="visible" >
+						<a href="https://rawgithub.com/whatwg/html-differences/master/Overview.html"><abbr title="Web Hypertext Application Technology Working Group">WHATWG</abbr> HTML5 Differences</a>
+					</li>
+					<li class="visible" >
+						<a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/text-level-semantics.html"><abbr title="Web Hypertext Application Technology Working Group">WHATWG</abbr> Text Semantic</a>
+					</li>
+					<li class="visible" >
+						<a href="http://www.html5rocks.com/en/">HTML5Rocks</a>
+					</li>
+					<li class="visible" >
+						<a href="http://www.html5doctor.com/">HTML5Doctor</a>
+					</li>
+					<li class="visible" >
+						<a href="http://www.html5rocks.com/en/">HTML5Rocks</a>
+						|
+						<a href="http://slides.html5rocks.com/">HTML5Rocks Slides/Presentation</a>
+					</li>
+					<li class="visible" >
+						<a href="http://glazkov.com/2011/01/14/what-the-heck-is-shadow-dom/"><span class="fontOrange">*BONUS*</span> Shadow DOM explained</a>
+					</li>
+
+
+				</ul>
+
+			</section>
+			<section>
+				<h2><i class="fa fa-puzzle-piece"></i> Assignment</h2>
+
+				<br />
+				<br />
+				<br />
+				<br />
+
+				<p class="alignCenter">Will be given after the CSS3 and Responsive Design talks, as a mix of the 3 presentations!</p>
+
+			</section>
+		</div>
+	</div>
+
+
+
+	<!-- =============================================
+	Section: JavaScripts
+	================================================== -->
+	<script src="./assets/js/modernizr.min.js"></script>
+	<script type="text/javascript">
+		(function(window, document) {
+			Modernizr.load([
+			{
+				load: [
+				'./assets/js/jquery.min.js',
+				'./assets/js/head.min.js',
+				'./assets/js/reveal.min.js',
+				],
+				complete: function() {
+
+					// Full list of configuration options available here:
+					// https://github.com/hakimel/reveal.js#configuration
+					Reveal.initialize({
+						controls: true,
+						progress: true,
+						history: true,
+						center: true,
+
+
+						// Parallax scrolling
+						// parallaxBackgroundImage: './assets/img/featured48@wdd2x.jpg',
+						// parallaxBackgroundSize: '1684px 960px'
+
+						// parallaxBackgroundImage: './assets/img/skyline_exp1.jpg',
+						// parallaxBackgroundSize: '1600px 900px'
+
+						// parallaxBackgroundImage: './assets/img/new_cave_bg.jpg',
+						// parallaxBackgroundSize: '1600px 600px'
+
+						transition: 'default' // default/cube/page/concave/zoom/linear/fade/none
+
+					});
+				}
+			},
+			{
+				load: [
+				'./assets/js/app.min.js'
+				],
+				complete: function() {
+					APP.footer();
+				}
+			},
+			{
+				load: [
+				'./assets/js/libs/prettify.js',
+				'./assets/js/libs/lang-css.js'
+				],
+				complete: function() {
+					APP.prettify();
+				}
+			},
+
+			]);
+})(window, document);
+</script>
+</script>
+	<!-- =============================================
+	Section: Google Analytics
+	================================================== -->
+	<!--
+	<script>
+		var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];
+		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+			g.src='//www.google-analytics.com/ga.js';
+			s.parentNode.insertBefore(g,s)}(document,"script"));
+	</script>
+-->
+</body>
+</html>

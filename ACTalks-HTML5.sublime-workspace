@@ -1,0 +1,1072 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"s",
+				"style	Attr"
+			],
+			[
+				"pretty",
+				"prettify"
+			],
+			[
+				"no",
+				"noStyle"
+			],
+			[
+				"script",
+				"scriptheader	scriptheader"
+			],
+			[
+				"red",
+				"ready	document.ready - $(function()"
+			],
+			[
+				"att",
+				"attributes"
+			],
+			[
+				"live",
+				"livereload"
+			],
+			[
+				"registry",
+				"registryId"
+			],
+			[
+				"curr",
+				"currHref"
+			],
+			[
+				"scrip",
+				"scriptheader	scriptheader"
+			],
+			[
+				"i",
+				"id	Attr"
+			],
+			[
+				"scripthead",
+				"scripthead	scripthead"
+			],
+			[
+				"app",
+				"appUrl"
+			],
+			[
+				"bind",
+				"historyBind"
+			],
+			[
+				"loa",
+				"loader"
+			],
+			[
+				"su",
+				"supportCss"
+			],
+			[
+				"animate",
+				"animate	animate"
+			],
+			[
+				"has",
+				"hasClass	.hasClass"
+			],
+			[
+				"prog",
+				"progressbar"
+			],
+			[
+				"cs",
+				"css	.css() - single"
+			],
+			[
+				"per",
+				"percentage"
+			],
+			[
+				"progre",
+				"progress"
+			],
+			[
+				"progress",
+				"progressbar"
+			],
+			[
+				"before",
+				"beforeSend"
+			],
+			[
+				"loader",
+				"loaderOverlay"
+			],
+			[
+				"fade",
+				"fadeOut	.fadeOut()"
+			],
+			[
+				"scr",
+				"scriptsubhead	scriptsubhead"
+			],
+			[
+				"parse",
+				"parseInt"
+			],
+			[
+				"form",
+				"formValues"
+			],
+			[
+				"sub",
+				"submit	submit"
+			],
+			[
+				"use",
+				"userInput"
+			],
+			[
+				"matrix",
+				"matrixMove"
+			],
+			[
+				"selec",
+				"selectedRow"
+			],
+			[
+				"sle",
+				"selectedRow"
+			],
+			[
+				"curren",
+				"currentIndex"
+			],
+			[
+				"cur",
+				"currentIndex"
+			],
+			[
+				"el",
+				"elem"
+			],
+			[
+				"cl",
+				"clickHandler"
+			],
+			[
+				"remove",
+				"removeClass	.removeClass"
+			],
+			[
+				"eac",
+				"each	.each()"
+			],
+			[
+				"the",
+				"theVal"
+			],
+			[
+				"attr",
+				"attr	.attr() - multiple"
+			],
+			[
+				"contain",
+				"container"
+			],
+			[
+				"add",
+				"addClass	addClass"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 40313,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/js/plugins/app.js",
+			"settings":
+			{
+				"buffer_size": 782,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/css/sass/app.scss",
+			"settings":
+			{
+				"buffer_size": 1938,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "TALK_html5.txt",
+			"settings":
+			{
+				"buffer_size": 7141,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 162.0,
+		"selected_items":
+		[
+			[
+				"pack list",
+				"Package Control: List Packages"
+			],
+			[
+				"pack re",
+				"Package Control: Remove Package"
+			],
+			[
+				"pack inst",
+				"Package Control: Install Package"
+			],
+			[
+				"pack ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 562.0
+	},
+	"console":
+	{
+		"height": 513.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/GitHub/ACTalks-HTML5-min/assets/js/app.min.js",
+		"/C/GitHub/ACTalks-HTML5/Gruntfile.js",
+		"/C/GitHub/ACTalks-HTML5/assets/css/sass/_bootstrap-custom.scss",
+		"/C/GitHub/ACTalks-HTML5/assets/css/sass/_prettify.scss",
+		"/C/GitHub/ACTalks-HTML5/package.json",
+		"/C/GitHub/ACTalks-HTML5/node_modules/grunt-contrib-imagemin/node_modules/image-min/node_modules/gifsicle/node_modules/bin-wrapper/node_modules/download/node_modules/decompress/node_modules/tar/test/pack-no-proprietary.js",
+		"/C/GitHub/ACTalks-HTML5/assets/css/sass/_reveal.scss",
+		"/C/GitHub/ACTalks-HTML5/assets/css/sass/_reveal_default-theme.scss",
+		"/C/GitHub/ACTalks-HTML5/assets/css/sass/revealjs/_settings.scss",
+		"/C/GitHub/ACTalks-HTML5/assets/css/sass/revealjs/_theme.scss",
+		"/C/GitHub/ACTalks-HTML5/assets/css/sass/font-awesome/_font-awesome.scss",
+		"/C/GitHub/ACTalks-HTML5/assets/css/sass/font-awesome/_core.scss",
+		"/C/GitHub/ACTalks-HTML5/assets/css/sass/revealjs/_mixins.scss",
+		"/C/Users/ac-roliveira/Desktop/TALK_html5.txt",
+		"/C/GitHub/ACTalks-HTML5/assets/js/libs/run_prettify.js",
+		"/C/GitHub/ACTalks-HTML5/assets/css/sass/_prettify.css",
+		"/C/GitHub/ACTalks-HTML5/reveal.js-2.6.1/test/examples/barebones.html",
+		"/C/GitHub/ACTalks-HTML5/node_modules/grunt/node_modules/glob/test/bash-results.json",
+		"/C/GitHub/ACTalks-HTML5/node_modules/grunt-contrib-connect/node_modules/connect/lib/middleware/basicAuth.js",
+		"/C/GitHub/ACTalks-HTML5/node_modules/grunt/internal-tasks/bump.js",
+		"/C/GitHub/ACTalks-HTML5/assets/js/custom.min.js",
+		"/C/GitHub/ACTalks-HTML5/assets/js/plugins/app.js",
+		"/C/Users/ac-roliveira/Dropbox/Projects/ACTalks-HTML5/assets/css/sass/app.scss",
+		"/C/Users/ac-roliveira/Dropbox/Projects/ACTalks-HTML5/reveal.js-2.6.1/index.html",
+		"/C/Users/ac-roliveira/Dropbox/Projects/ACTalks-HTML5/index.html",
+		"/C/Users/ac-roliveira/Dropbox/Projects/ACTalks-HTML5/assets/css/sass/reveal_default.scss",
+		"/C/Users/ac-roliveira/Dropbox/Projects/ACTalks-HTML5/reveal.js-2.6.1/lib/js/head.min.js",
+		"/C/Users/ac-roliveira/Dropbox/Projects/ACTalks-HTML5/assets/css/default.css",
+		"/C/Users/ac-roliveira/Dropbox/Projects/ACTalks-HTML5/assets/css/sass/default.scss",
+		"/C/WS/ShopNServe/BCOM/BloomiesShopNServe/src/main/webapp/sns/web20/assets/style/registry/home/home.css",
+		"/C/WS/macysJS/config/js-beautify.json",
+		"/C/WS/macysJS/config/codingStandards.json",
+		"/C/WS/macysJS/.gitattributes",
+		"/C/WS/ShopNServe/MCOM/MacysShopNServe/src/main/webapp/sns/web20/assets/style/registry/macys-base.css",
+		"/C/WS/Assets/bloomies.war/accessibility/manual_cn.html",
+		"/C/WS/macysJS/node_modules/handlebars/node_modules/uglify-js/lib/mozilla-ast.js",
+		"/C/WS/macysJS/node_modules/.bin/madge",
+		"/C/WS/ShopNServe/BCOM/BloomiesShopNServe/src/main/webapp/WEB-INF/jsp/registry/static/benefits/script.jsp",
+		"/C/WS/ShopNServe/BCOM/BloomiesShopNServe/src/main/webapp/WEB-INF/jsp/registry/manager/regManagerSummaryStore.jsp",
+		"/C/WS/BloomiesCommonUI/src/main/webapp/web20/global/ad/slideShow.jsp",
+		"/C/WS/BloomiesCommonUI/src/main/webapp/web20/global/flexTemplateNew/ad/slideShow.jsp",
+		"/C/WS/Assets/bloomies.war/web20/assets/script/bloomies/catalog/slideshow.js",
+		"/C/WS/macysJS/src/bcom/features/registry/home/home.js",
+		"/C/WS/macysJS/src/mcom/features/registry/help-overlay.js",
+		"/C/WS/macysJS/node_modules/.bin/handlebars",
+		"/C/Users/ac-roliveira/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/WS/ShopNServe/BCOM/BloomiesShopNServe/src/main/webapp/WEB-INF/jsp/registry/home/default.jsp",
+		"/C/WS/ShopNServe/BCOM/BloomiesShopNServe/src/main/webapp/sns/web20/assets/style/registry/manager/registry_manager.css",
+		"/C/WS/macysJS/src/bcom/features/registry/manager/manager.js",
+		"/C/WS/Assets/bloomies.war/css/globalCommon.css",
+		"/C/WS/ShopNServe/BCOM/BloomiesShopNServe/src/main/webapp/WEB-INF/jsp/registry/manager/regManagerSummary.jsp",
+		"/C/WS/ShopNServe/BCOM/BloomiesShopNServe/src/main/webapp/WEB-INF/jsp/registry/manager/registrySharingPanel.jsp",
+		"/C/WS/ShopNServe/BCOM/BloomiesShopNServe/src/main/webapp/WEB-INF/jsp/registry/manager/regManagerSummaryTools.jsp",
+		"/C/WS/ShopNServe/BCOM/BloomiesShopNServe/src/main/webapp/WEB-INF/jsp/registry/manager/content.jsp",
+		"/C/WS/ShopNServe/BCOM/BloomiesShopNServe/src/main/webapp/WEB-INF/jsp/registry/manager/regManagerHeader.jsp",
+		"/C/WS/ShopNServe/BCOM/BloomiesShopNServe/src/main/webapp/WEB-INF/jsp/registry/manager/regManagerSummaryGifts.jsp",
+		"/C/WS/ShopNServe/BCOM/BloomiesShopNServe/src/main/webapp/WEB-INF/jsp/registry/home/content.jsp",
+		"/C/Users/ac-roliveira/Dropbox/Projects/_projectTemplate/assets/css/sass/_sprites.scss",
+		"/C/Users/ac-roliveira/Dropbox/Projects/_projectTemplate/assets/css/sass/app.scss",
+		"/C/Users/ac-roliveira/Dropbox/Projects/_projectTemplate/assets/css/sass/_variables.scss",
+		"/C/Users/ac-roliveira/Dropbox/Projects/_projectTemplate/assets/css/sass/_mixins.scss",
+		"/C/Users/ac-roliveira/Dropbox/Projects/_projectTemplate/assets/css/sass/default.scss",
+		"/C/WS/ShopNServe/BCOM/BloomiesShopNServe/src/main/webapp/WEB-INF/jsp/registry/home/vertical_layout.jsp",
+		"/C/WS/macysJS/Gruntfile.js",
+		"/C/WS/macysJS/src/bcom/base/HostConfig.js",
+		"/C/WS/macysJS/src/bcom/base/GoogleConfig.js",
+		"/C/WS/BloomiesCommonUI/src/main/webapp/web20/global/flexWidget/recommendationContainer.jsp",
+		"/C/WS/BloomiesCommonUI/src/main/webapp/web20/global/globalLayout.jsp",
+		"/C/WS/Assets/bloomies.war/akamai/dynamic_site_accelerator.htm",
+		"/C/WS/Assets/dev_pom.xml",
+		"/C/WS/macysJS/package.json",
+		"/C/Users/ac-roliveira/Dropbox/Projects/MarphAttem/AttemAdmin/Gruntfile.js",
+		"/C/Users/ac-roliveira/Dropbox/Projects/MarphAttem/AttemAdmin/package.json",
+		"/C/WS/ShopNServe/BCOM/BloomiesShopNServe/src/main/webapp/WEB-INF/jsp/registry/static/benefits/benefits.jsp",
+		"/C/WS/ShopNServe/BCOM/BloomiesShopNServe/src/main/webapp/sns/web20/assets/style/registry/static/printChecklist.css",
+		"/C/WS/ShopNServe/BCOM/BloomiesShopNServe/src/main/webapp/WEB-INF/jsp/registry/static/checklist/printChecklist/css.jsp",
+		"/C/WS/ShopNServe/BCOM/BloomiesShopNServe/src/main/webapp/sns/web20/assets/style/registry/static/registry_benefits.css",
+		"/C/Users/ac-roliveira/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/ac-roliveira/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/ac-roliveira/AppData/Roaming/Sublime Text 3/Packages/User/Git.sublime-settings",
+		"/C/Users/ac-roliveira/AppData/Roaming/Sublime Text 3/Packages/User/SublimeGit.sublime-settings",
+		"/C/Users/ac-roliveira/AppData/Roaming/Sublime Text 3/Packages/Git/Git.sublime-settings",
+		"/C/Users/ac-roliveira/AppData/Roaming/Sublime Text 3/Packages/SublimeGit/SublimeGit.sublime-settings",
+		"/C/WS/Assets/bloomies.war/web20/assets/style/creativecontent/registry/wedding/printchecklist.css",
+		"/C/WS/Assets/bloomies.war/css/print.css",
+		"/C/WS/Assets/bloomies.war/akamai/product-id-rewrite.html",
+		"/C/WS/Assets/pom.xml",
+		"/C/WS/ShopNServe/BCOM/BloomiesShopNServe/src/main/webapp/sns/web20/assets/style/registry/static/registry_mew_benefits.css",
+		"/C/Users/ac-roliveira/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/WS/ShopNServe/BCOM/BloomiesShopNServe/src/main/webapp/WEB-INF/jsp/registry/manager/regManagerSummaryPerks.jsp",
+		"/C/WS/ShopNServe/BCOM/BloomiesShopNServe/pom.xml",
+		"/C/WS/ShopNServe/BCOM/pom.xml",
+		"/C/WS/ShopNServe/BCOM/BloomiesShopNServe/target/classes/META-INF/properties/common/environment.properties",
+		"/C/WS/ShopNServe/BCOM/BloomiesShopNServeConfig/target/classes/BloomiesShopNServe.war-1.23.0-SNAPSHOT/target/environment.properties",
+		"/C/WS/ShopNServe/BCOM/BloomiesShopNServe/target/archive-tmp/environment.properties.375497010.filtered",
+		"/C/WS/macysJS/node_modules/js-beautify/node_modules/config-chain/test/env.js",
+		"/C/WS/macysJS/node_modules/grunt-jsbeautifier/.idea/encodings.xml",
+		"/C/WS/macysJS/node_modules/.bin/esparse",
+		"/C/WS_BKP/ShopNServe/BCOM/BloomiesShopNServe/src/main/webapp/sns/web20/assets/style/registry/manager/registry_manager.css",
+		"/C/WS_BKP/ShopNServe/BCOM/BloomiesShopNServe/src/main/webapp/WEB-INF/jsp/registry/manager/regManagerSummaryGifts.jsp",
+		"/C/WS_BKP/ShopNServe/BCOM/BloomiesShopNServe/src/main/webapp/WEB-INF/jsp/registry/manager/regManagerSummaryPerks.jsp",
+		"/C/WS_BKP/ShopNServe/BCOM/BloomiesShopNServe/src/main/webapp/WEB-INF/jsp/registry/manager/regManagerSummaryTools.jsp",
+		"/C/WS_BKP/ShopNServe/BCOM/BloomiesShopNServe/src/main/webapp/WEB-INF/jsp/registry/manager/regManagerSummaryStore.jsp",
+		"/C/WS_BKP/ShopNServe/BCOM/BloomiesShopNServe/src/main/webapp/WEB-INF/jsp/registry/manager/regManagerSummary.jsp",
+		"/C/WS_BKP/ShopNServe/BCOM/BloomiesShopNServe/src/main/webapp/WEB-INF/jsp/registry/manager/regManagerHeader.jsp",
+		"/C/WS/ShopNServe/BCOM/BloomiesShopNServe/src/main/webapp/WEB-INF/tiles/registry-tiles-defs.xml",
+		"/C/WS/ShopNServe/BCOM/BloomiesShopNServe/src/main/resources/META-INF/properties/ui/registry/registry.properties",
+		"/C/WS/ShopNServe/BCOM/BloomiesShopNServe/src/main/resources/META-INF/properties/common/environment.properties",
+		"/C/WS/ShopNServe/BCOM/BloomiesShopNServe/src/main/webapp/sns/web20/assets/style/registry/manager/registry_mew_manager.css",
+		"/C/WS/macysJS/hs_err_pid10876.log",
+		"/C/WS/ShopNServe/BCOM/BloomiesShopNServe/src/main/webapp/sns/web20/assets/style/registry/common/registry_mew.css",
+		"/C/WS/ShopNServe/BCOM/BloomiesShopNServe/src/main/webapp/sns/web20/assets/style/registry/common/registry.css",
+		"/C/Users/ac-roliveira/Downloads/post_event_personalized_header_registry_manager_page_V2.feature",
+		"/C/WS/ShopNServe/BCOM/BloomiesShopNServe/src/main/webapp/sns/web20/assets/style/registry/manager/manager.css",
+		"/C/WS/ShopNServe/BCOM/BloomiesShopNServe/src/main/webapp/WEB-INF/jsp/registry/manager/css.jsp",
+		"/C/Users/ac-roliveira/AppData/Roaming/Sublime Text 3/Packages/User/Emmet.sublime-settings",
+		"/C/WS/ShopNServe/BCOM/BloomiesShopNServe/src/main/webapp/WEB-INF/jsp/registry/manager/completionDiscountPanel.jsp",
+		"/C/WS/ShopNServe/BCOM/BloomiesShopNServe/src/main/webapp/sns/web20/assets/style/registry/static/checklist.css",
+		"/C/WS/ShopNServe/BCOM/BloomiesShopNServe/src/main/webapp/WEB-INF/jsp/registry/static/benefits/css.jsp",
+		"/C/Users/ac-roliveira/Downloads/render_flexible_links_ui.feature",
+		"/C/WS/maven.1387822214877/BloomiesCommonUI/src/main/webapp/web20/global/flexTemplateNew/ad/ad_flex_links_li.jsp",
+		"/C/WS/maven.1387822214877/BloomiesCommonUI/src/main/webapp/web20/global/flexTemplateNew/ad/ad_flex_links.jsp",
+		"/C/WS/maven.1387822214877/BloomiesCommonUI/src/main/webapp/web20/global/flexTemplateNew/ad/masterAd.jsp",
+		"/C/WS/maven.1387822214877/BloomiesCommonUI/src/main/webapp/WEB-INF/web20/tiles-defs.xml",
+		"/C/WS/maven.1387822214877/BloomiesCommonUI/src/main/webapp/web20/global/ad/masterAd.jsp",
+		"/C/Users/ac-roliveira/AppData/Roaming/Sublime Text 3/Packages/User/htmlhead.sublime-snippet",
+		"/C/WS/ShopNServe/BCOM/BloomiesShopNServe/src/main/webapp/sns/web20/assets/script/registry/static/checklist.js",
+		"/C/WS/ShopNServe/BCOM/BloomiesShopNServe/src/main/webapp/WEB-INF/jsp/registry/home/script.jsp"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"C:\\WS\\BloomiesCommonUI",
+			"C:\\WS\\Assets",
+			"C:\\WS\\macysJS",
+			"<project>",
+			"C:\\WS\\ShopNServe\\BCOM\\BloomiesShopNServe",
+			"\\ShopNServe\\BCOM",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"&quot;",
+			"<section>\n					<h2><i class=\"fa fa-edit\"></i> Forms</h2>\n\n					<h4>The \"tel\" type</h4>\n\n					<p class=\"small alignLeft clearfix\">Used for telephone input.</p>\n\n					<pre class=\"prettyprint linenums lang-html noConvert\"><code>&lt;input type=&quot;tel&quot; placeholder=&quot;9999-9999&quot; /&gt;</code></pre>\n\n					<form action=\"#\" class=\"form\">\n						<div class=\"form-group col-sm-5\">\n							<p class=\"alignLeft xsmall\">Desktop</p>\n							<input type=\"tel\" class=\"form-control\" placeholder=\"9999-9999\" />\n						</div>\n						<div class=\"col-sm-5 col-sm-offset-1\">\n							<p class=\"alignLeft xsmall\">Mobile</p>\n							<img src=\"./assets/img/iphone-form-tel.png\" alt=\"\" class=\"picture\" style=\"width: 50%;\" />\n						</div>\n					</form>\n				</section>",
+			"code",
+			"					<",
+			" data-background=\"rgba(0,0,0,.5)\"",
+			"<section>\n					<h2><i class=\"fa fa-table\"></i> Structure</h2>\n				\n					<h4>The &lt;header&gt; element</h4>\n				\n					<p class=\"small alignLeft\">Represents a group of introductory or navigational aids (that is, may contain the &lt;nav&gt; element).</p>\n				\n					<pre class=\"prettyprint linenums lang-html noConvert\"><code>&lt;p&gt;&lt;strong&gt;Warning.&lt;/strong&gt; This dungeon is dangerous. &lt;strong&gt;Avoid the ducks.&lt;/strong&gt; Take any gold you find. &lt;strong&gt;Do not take any of the diamonds&lt;/strong&gt;, they are explosive and &lt;strong&gt;will destroy anything within ten meters.&lt;/strong&gt; You have been warned.&lt;/p&gt;</code></pre>\n				\n					<div class=\"fragment\">\n						<p class=\"small alignLeft\">A more daily use, the word \"chapter\" and the actual chapter number are mere boilerplate, and the actual name of the chapter is marked up with strong:</p>\n						<pre class=\"prettyprint linenums lang-html noConvert\"><code>&lt;h1&gt;Chapter 1: &lt;strong&gt;What HTML 5 aims&lt;/strong&gt;&lt;/h1&gt;</code></pre>\n					</div>\n				</section>",
+			"smaller",
+			"h1",
+			"h1 ",
+			"h1",
+			" (data-fragment-index=\")(\\d)(\")",
+			" (data-fragment-index=\")(\\d)(\") ",
+			"absolute-element",
+			"\\\"",
+			"\\/",
+			"../../lib/font",
+			"--------------------",
+			"■",
+			".breadcrumb",
+			"breadcrumb",
+			"bread",
+			"Dot",
+			"Dot_",
+			"rg_mgr_summary_tools",
+			"reg_mgr_viewItemsBtn",
+			"exit",
+			"text-indent: -10000px;",
+			"file_",
+			"-100000px",
+			"text-ind",
+			"phoneNumber",
+			"Assets",
+			"ws/",
+			"c:",
+			"C:",
+			"rg_mgr_c",
+			"reg_mgr_consultantInfo",
+			"reg_mgr_smy_cnt_",
+			"reg_mgr_datesRow",
+			"<<",
+			"reg_mgr_summaryContent_tools_elements",
+			"reg_mgr_summaryContent_myStore_shopAddress",
+			"reg_mgr_smy_Content",
+			"reg_mgr_smy_Content_element",
+			"reg_mgr_smy_Content_title",
+			"reg_mgr_registryIdLbl",
+			"strong",
+			"coremetrics",
+			"reg_mgr_smy_Content_element_value",
+			"reg_mgr_smy_cnt_element_value",
+			"Content_myStore",
+			"reg_mgr_summary",
+			"registryManagerVB.store",
+			"reg_mgr_helper",
+			"reg_mgr_consultantInfo",
+			"reg_mgr_BoldTxt",
+			"reg_mgr_settings",
+			"reg_mgr_registryIdLbl",
+			"reg_mgr_viewItemsBtn",
+			"reg_mgr_helper",
+			"reg_mgr_consultantInfo",
+			"desk",
+			"phone",
+			"desktop",
+			"reg_manager",
+			"reg_manager_consultantInfo",
+			"reg_manager_helper",
+			"cm_sp",
+			"registerTask( 'ins",
+			"test",
+			"jasmine",
+			"c:",
+			"resourcesAsCSV",
+			"masterAd.jsp",
+			"<c:forEach ",
+			"${appData.",
+			"reg_manager_summaryContent_myStore_shopAddress",
+			"cmCreatePageElementTag",
+			"event",
+			"test=\"",
+			"c:test",
+			"reg_manager_eventCountdown",
+			"registryManagerVB.registry",
+			"bHubAssetsImages",
+			"assets",
+			"regsitryManagerVB",
+			"bl_breadCrumbAndMainContentContainer",
+			"C:\\Program Files (x86)\\",
+			"C:/Program Files (x86)/Apache Group/Apache2",
+			"C:\\Program Files (x86)\\",
+			"C:\\Program Files (x86)\\Apache Group\\Apache2",
+			"C:\\Program Files",
+			"Apache2.2",
+			"C:/Program Files (x86)/",
+			"C:/Program Files (x86)/Apache Group/Apache2/",
+			"prototype.",
+			"--time",
+			"helperUtilityManagerImpl",
+			"horizontal",
+			"localhost",
+			"raphael.",
+			"raphael.oliveira",
+			") and",
+			"@media",
+			"<%= pkg.folderConfig.user_assets_folder %>/<%= pkg.folderConfig.user_javascript_folder %>",
+			"$ctl",
+			"@requestmapping",
+			"extends",
+			"body.chane",
+			"${",
+			"c:body",
+			"jsp:body",
+			"<tiles:",
+			"<body>",
+			"fixed",
+			",BLOOMIES",
+			"BLOOMIES,",
+			"BLOOMIES =",
+			"var BLOOMIES",
+			"BLOOMIES.namespace =",
+			"BLOOMIES.namespace",
+			"namespace(",
+			"function namespace",
+			"mod_rewrite",
+			"ssl_module",
+			"sl_module",
+			"ssl_module",
+			"jdk"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\"",
+			"",
+			"small",
+			" ",
+			"\"",
+			"/",
+			"../fonts",
+			"====================",
+			"-",
+			"-9999px",
+			"rg_mgr_summary_",
+			"reg_mgr_smy_cnt",
+			"reg_mgr_smy_cnt_element",
+			"reg_mgr_smy_cnt_title",
+			"reg_mgr_smy_cnt_element_value",
+			"cnt_store",
+			"reg_mgr_smy_",
+			"reg_mgr_store",
+			"reg_mgr",
+			"regMan",
+			"registryManagerVB",
+			"C:/Dev/Apache2",
+			"C:\\Dev\\Apache2",
+			"Apache2",
+			"",
+			"ddl.",
+			"ac-roliveira",
+			"<%= jsFolder %>",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 40313,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								40313,
+								40313
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
+							],
+							"bs_sintax": "html",
+							"buffer_scroll_name": "d9c0c45d",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 16387.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "assets/js/plugins/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 782,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								782,
+								782
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
+							],
+							"bs_sintax": "javascript",
+							"buffer_scroll_name": "eab1d43e",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "assets/css/sass/app.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1938,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1820,
+								1820
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
+							],
+							"bs_sintax": "sass",
+							"buffer_scroll_name": "c832645f",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1536.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "TALK_html5.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7141,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6556,
+								6556
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
+							],
+							"bs_sintax": "plain text",
+							"buffer_scroll_name": "d0004783",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1216.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.676081730769,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 94.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "ACTalks-HTML5.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"barebones",
+				"reveal.js-2.6.1\\test\\examples\\barebones.html"
+			],
+			[
+				"macysjsbenefits",
+				"macysJS\\src\\bcom\\features\\registry\\static\\benefits.js"
+			],
+			[
+				"macysjshome",
+				"macysJS\\src\\bcom\\features\\registry\\home\\home.js"
+			],
+			[
+				"globalcommon",
+				"Assets\\bloomies.war\\css\\globalCommon.css"
+			],
+			[
+				"printchecklist",
+				"ShopNServe\\BCOM\\BloomiesShopNServe\\src\\main\\webapp\\sns\\web20\\assets\\style\\registry\\static\\printChecklist.css"
+			],
+			[
+				"common/environment.properties",
+				"ShopNServe\\BCOM\\BloomiesShopNServe\\src\\main\\resources\\META-INF\\properties\\common\\environment.properties"
+			],
+			[
+				"srcmew_benefi",
+				"ShopNServe\\BCOM\\BloomiesShopNServe\\src\\main\\webapp\\sns\\web20\\assets\\style\\registry\\static\\registry_mew_benefits.css"
+			],
+			[
+				"srcregistry_benefits",
+				"ShopNServe\\BCOM\\BloomiesShopNServe\\src\\main\\webapp\\sns\\web20\\assets\\style\\registry\\static\\registry_benefits.css"
+			],
+			[
+				"bcom/bloomies/pom.x",
+				"ShopNServe\\BCOM\\BloomiesShopNServe\\pom.xml"
+			],
+			[
+				"bcom/pom",
+				"ShopNServe\\BCOM\\pom.xml"
+			],
+			[
+				"masterad.jsp",
+				"maven.1387822214877\\BloomiesCommonUI\\src\\main\\webapp\\web20\\global\\ad\\masterAd.jsp"
+			],
+			[
+				"mainshopnserve-common-context.xm",
+				"target\\WEB-INF\\classes\\META-INF\\config\\common\\shopnserve-common-context.xml"
+			],
+			[
+				"enviroment",
+				"src\\main\\resources\\META-INF\\properties\\common\\environment.properties"
+			],
+			[
+				"bcommainenvironment.properties",
+				"BCOM\\BloomiesShopNServe\\src\\main\\resources\\META-INF\\properties\\common\\environment.properties"
+			],
+			[
+				"web.xml",
+				"BloomiesNavAppParent\\BloomiesNavAppWeb\\src\\main\\webapp\\WEB-INF\\web.xml"
+			],
+			[
+				"pdp-servlet.xml",
+				"NavAppParent\\NavAppWebConfig\\src\\main\\webapp\\WEB-INF\\classes\\navapp-bdb_native_catalog-iship-servlet.xml"
+			],
+			[
+				"/web20/catalog/productdetail/init.jsp",
+				"BloomiesNavAppParent\\BloomiesNavAppWeb\\src\\main\\webapp\\web20\\catalog\\productDetail\\init.jsp"
+			],
+			[
+				"common/init.jsp",
+				"BloomiesNavAppParent\\BloomiesNavAppWeb\\src\\main\\webapp\\web20\\common\\init.jsp"
+			],
+			[
+				"productdetail/body.jsp",
+				"BloomiesNavAppParent\\BloomiesNavAppWeb\\src\\main\\webapp\\web20\\catalog\\productDetail\\body.jsp"
+			],
+			[
+				"tiles",
+				"maven.1385474662841\\BloomiesCommonUI\\src\\main\\webapp\\WEB-INF\\web20\\tiles-defs.xml"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 256.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
