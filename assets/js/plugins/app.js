@@ -8,7 +8,8 @@ APP.footer = function () {
 	var acFooter = "";
 	acFooter += "<div class=\"acFooter\">";
 	acFooter += "	<hr \/>";
-	acFooter += "	<div>ACTalks - 'HTML5' with Raphael 'DDL' Oliveira<\/div>";
+	// acFooter += "	<div>ACTalks - 'HTML5' with Raphael 'DDL' Oliveira<\/div>";
+	acFooter += "	<div>Brace yourselves, HTML5 has come!<\/div>";
 	acFooter += "<\/div>";
 	acFooter += "<img src=\"https:\/\/s3.amazonaws.com\/media-p.slid.es\/uploads\/avenuecode\/images\/197088\/logo.png\" class=\"acFooter\" \/>";
 

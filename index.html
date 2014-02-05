@@ -31,16 +31,25 @@
 	<div class="reveal">
 		<div class="slides">
 			<section>
-				<img src="./assets/img/HTML5_Logo_512.png" class="noStyle" style="max-height: none; max-width: none; width: 373px; height: 373px;">
+				<img src="./assets/img/brace.jpg" class="noStyle" style="max-height: none; max-width: none; width: 500px; height: 375px;" width="500" height="375" />
+				<!-- <img src="./assets/img/HTML5_Logo_512.png" class="noStyle" style="max-height: none; max-width: none; width: 373px; height: 373px;" /> -->
+				<!-- <p>Brace yourselves, HTML5 has come!</p> -->
+				<br />
+				<br />
+				<br />
+				<p class="small">by Raphael Oliveira @ Avenue Code</p>
 
-				<p>by Raphael Oliveira @ Avenue Code</p>
-
-				<p>
+				<p class="small">
 					<a href="mailto:roliveira@avenuecode.com">roliveira@avenuecode.com</a>
 				</p>
 
-				<p>Feb 6th, 2014</p>
+				<p class="small">Feb 6th, 2014</p>
 			</section>
+			<!-- <section>
+				<br />
+				<br />
+				<img src="./assets/img/brace.jpg" class="noStyle" style="max-height: none; max-width: none; width: 500px; height: 375px;" width="500" height="375" />
+			</section> -->
 			<section>
 				<h2><i class="fa fa-book"></i> AGENDA</h2>
 				<ul class="small">
@@ -77,7 +86,7 @@
 				<br />
 				<br />
 				<br />
-				<p class="xsmall alignLeft fragment"><strong class="fontOrange">&sup1;</strong>: App Cache/Manifest, contenteditable, data-*, role / aria-*, JS APIs such as Geolocation, Session and Local Storages, History/PushState, Audio/Video media, Canvas, Draggable/Droppable. Not covered in this presentation.</p>
+				<p class="small alignLeft fragment"><strong class="fontOrange">&sup1;</strong>: App Cache/Manifest, contenteditable, data-*, role / aria-*, JS APIs such as Geolocation, Session and Local Storages, History/PushState, Audio/Video media, Canvas, Draggable/Droppable. Not covered in this presentation.</p>
 			</section>
 
 
@@ -397,8 +406,8 @@
 				<section>
 					<h2><i class="fa fa-edit"></i> Forms</h2>
 
-					<p class="small alignLeft">The form has received a significant amount of updates and new items, enabling better control and validation that were previously made using JavaScript as well as better usability.</p>
-					<p class="small alignLeft">JS is still needed while the support isn't wide but the good point is that most of those are already implemented in the mobile browsers as they highly increase the usability while filling a form.</p>
+					<p class=" alignLeft">The form has received a significant amount of updates and new items, enabling better control and validation that were previously made using JavaScript as well as better usability.</p>
+					<!-- <p class="small alignLeft">JS is still needed while the support isn't wide but the good point is that most of those are already implemented in the mobile browsers as they highly increase the usability while filling a form.</p> -->
 					<br />
 					<br />
 					<br />
@@ -645,18 +654,25 @@
 
 					<h4>New attributes</h4>
 
-					<p class="small alignLeft clearfix">There are some attributes that can be used on the inputs.</p>
+					<p class=" alignLeft clearfix">There are some attributes that can be used on the inputs.</p>
 
-					<ul class="xsmall alignLeft">
+					<ul class="small alignLeft">
 						<li><span class="fontOrange">placeholder</span> - text to be inserted as a helper;</li>
 						<li><span class="fontOrange">autofocus</span> - the focus will be on the input as soon the page loads;</li>
 						<li><span class="fontOrange">required</span> - it's required to be filled before form submission;</li>
 						<li><span class="fontOrange">pattern</span> - regexp for what is accepted on the input;</li>
 					</ul>
 
-					<p class="small alignLeft">Also there are some new pseudo-classes available through CSS for styling those new attributes and input states (not covered on this presentation):</p>
 
-					<ul class="xsmall alignLeft">
+				</section>
+
+				<section>
+					<h2><i class="fa fa-edit"></i> Forms</h2>
+
+					<h4>New attributes - cont.</h4>
+					<p class=" alignLeft">Also there are some new pseudo-classes available through CSS for styling those new attributes and input states (not covered on this presentation):</p>
+
+					<ul class="small alignLeft">
 						<li><span class="fontOrange">[required]</span> - attribute selector works for styling the required ones;</li>
 						<li><span class="fontOrange">:invalid</span> - pseudo-class for styling inputs with invalid data;</li>
 						<li><span class="fontOrange">:valid</span> - pseudo-class for styling inputs with valid data;</li>
@@ -680,7 +696,7 @@
 
 					<div class="clearfix">
 						<div class="col-sm-6">
-							<p class="small alignLeft">Input type text that is <b>required</b> and has the pattern <em>[a-zA-Z]{1,10}</em> (any character from a-z and A-Z, nothing else) and needs to be between one and 10 characters:</p>
+							<p class="small alignLeft"><b>Required</b> input with pattern <em>[a-zA-Z]{1,10}</em> (any character from a-z and A-Z, nothing else) and needs to be between one and 10 characters:</p>
 						</div>
 						<div class="col-sm-6">
 							<form action="#" class="form" onsubmit="$(this).submit(function(event){event.preventDefault();});">
@@ -810,23 +826,31 @@
 	&lt;!-- fallback here, such as Flash or some error message --&gt;
 &lt;/audio&gt;</code></pre>
 
-					<div class="fragment clearfix">
+
+				</section>
+				<section>
+					<h2><i class="fa fa-play-circle-o"></i> Media</h2>
+
+					<h4>The &lt;audio&gt; element - Samples:</h4>
+
+					<div class="clearfix">
 						<div class="col-sm-6 alignCenter">
 							<audio loop preload="auto" controls>
-							<source src="./assets/media/SNES_ISSSD_Menu.mp3" />
-							<!-- fallback here, such as Flash or some error message -->
-						</audio>
+								<source src="./assets/media/SNES_ISSSD_Menu.mp3" />
+								<!-- fallback here, such as Flash or some error message -->
+							</audio>
+							<p class="xsmall">SNES ISSSD</p>
 						</div>
 						<div class="col-sm-6 alignCenter">
 							<audio loop preload="auto" controls>
 								<source src="./assets/media/SNES_MMX_OpeningStage.mp3" />
 								<!-- fallback here, such as Flash or some error message -->
 							</audio>
+							<p class="xsmall">SNES MegamanX</p>
 						</div>
 					</div>
-				</section>
-				<section>
-					<h2><i class="fa fa-play-circle-o"></i> Media</h2>
+					<br />
+					<br />
 
 					<h4>The &lt;audio&gt; element - Codec support:</h4>
 
@@ -907,12 +931,19 @@
 					<li><span class="">HTML5Shiv/shim</span></li>
 					<li><span class="">Modernizr/Yepnope</span></li>
 				</ul>
-
+			</section>
+			<section>
+				<h2><i class="fa fa-check-square"></i> Conclusion</h2>
+				<br />
+				<img src="./assets/img/one.jpg" class="noStyle" style="max-height: none; max-width: none; width: 400px; height: 400px;" width="400" height="400" />
 			</section>
 			<section>
 				<h2><i class="fa fa-pencil"></i> Learn more</h2>
 				<br />
 				<ul class="small alignLeft">
+					<li class="visible" >
+						<a href="http://diveintohtml5.info/">Dive into HTML5</a>
+					</li>
 					<li class="visible" >
 						<a href="http://www.w3.org/TR/html5-diff/">W3C Differences from HTML4</a>
 					</li>
